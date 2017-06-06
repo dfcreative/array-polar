@@ -9,10 +9,10 @@ function toPolar (arr, center) {
 
 	if (center == null) center = [0, 0]
 
-	var i = 0, l = arr.length, x, y;
+	var i = 0, l = arr.length, x, y, cx = center[0], cy = center[1];
 
 	for (; i < l; i+=2) {
-		x = arr[i], y = arr[i+1]
+		x = arr[i] - cx, y = arr[i+1] - cy
 		arr[i] = Math.sqrt(x*x+y*y)
 		arr[i+1] = Math.atan2(y, x)
 	}
@@ -25,12 +25,12 @@ function toCartesian (arr, center) {
 
 	if (center == null) center = [0, 0]
 
-	var i = 0, l = arr.length, r, a;
+	var i = 0, l = arr.length, r, a, cx = center[0], cy = center[1];
 
 	for (; i < l; i+=2) {
 		r = arr[i], a = arr[i+1]
-		arr[i] = r*Math.cos(a)
-		arr[i+1] = r*Math.sin(a)
+		arr[i] = r*Math.cos(a) + cx
+		arr[i+1] = r*Math.sin(a) + cy
 	}
 
 	return arr;
