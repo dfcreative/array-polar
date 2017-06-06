@@ -1,0 +1,29 @@
+{
+  "name": "array-polar",
+  "version": "1.0.0",
+  "description": "Convert array with cartesian coordinates to polar and back",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfcreative/array-polar.git"
+  },
+  "keywords": [
+    "array",
+    "normalize",
+    "normal",
+    "statistics",
+    "samples"
+  ],
+  "author": "Dima Yv <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfcreative/array-polar/issues"
+  },
+  "homepage": "https://github.com/dfcreative/array-polar#readme",
+  "devDependencies": {
+    "almost-equal": "^1.1.0"
+  }
+}
