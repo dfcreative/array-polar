@@ -7,7 +7,7 @@ Convert array with cartesian coordinates to polar or back.
 ```js
 const polar = require('array-polar')
 
-let polarCoords = polar([0,1, 1,2]) // [0, .5, 1]
+let polarCoords = polar([0,1, 1,0]) // [1,0, 1,Math.PI/2]
 let cartesianCoords = polar.cartesian(coords)
 ```
 
