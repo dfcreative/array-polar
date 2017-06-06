@@ -15,7 +15,7 @@ let cartesianCoords = polar.cartesian(coords)
 
 ### polar(array, center=[0, 0])
 
-Convert 2-dimensional `array` with `[x, y, x, y, ...]` layout to polar coordinates based on `center` point, so that result is `[r, θ, r, θ, ...]` `array`. You may want to calculate `center` as average or median. `array` is modified in-place, so do slice if you need immutable behaviour.
+Convert 2-dimensional `array` with `[x, y, x, y, ...]` layout to polar coordinates based on `center` point, so that result is `[r, θ, r, θ, ...]` `array`. You may want to calculate `center` as average or median of data. `array` is modified in-place, so do slice if you need immutable behaviour.
 
 ### polar.cartesian(array, center=[0, 0])
 
